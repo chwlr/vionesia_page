@@ -27,7 +27,6 @@ export default function ContactContent () {
           <Col lg="4" className="my-2" >
             <Card style={{ height: '170px' }}>
               <Card.Body className=" d-flex flex-column  align-items-center text-center">
-                {/* <img src="/ic-phone.svg" style={{ width: "30px", height: "auto" }} className="my-3" /> */}
                 <FaPhoneAlt style={{ fontSize: '30px', color: '#155BDA' }} className="my-3"/>
                 <small>+62 21 2598 5152</small>
               </Card.Body>
@@ -36,7 +35,6 @@ export default function ContactContent () {
           <Col lg="4" className="my-2">
             <Card style={{ height: '170px' }}>
               <Card.Body className=" d-flex flex-column  align-items-center text-center">
-                {/* <img src="/ic-mail.svg" style={{ width: "30px", height: "auto" }} className="my-3" /> */}
                 <MdMail style={{ fontSize: '30px', color: '#155BDA' }} className="my-3"/>
                 <small>sales@vionesia.com</small>
               </Card.Body>
