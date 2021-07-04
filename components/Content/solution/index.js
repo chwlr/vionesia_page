@@ -60,7 +60,7 @@ export default function SolutionContent () {
               <div className="d-flex flex-column align-items-center" style={{ height: '70%' }}>
                 <IcStyled src="/mcafee.png"/>
                 <IcStyled src="/dreamlabtech.svg"/>
-                <IcStyled src="/infoblox.png"/>
+                <IcStyled src="/infobox.png"/>
                 <IcStyled src="/tenable.png"/>
               </div>
             </CardStyled>
