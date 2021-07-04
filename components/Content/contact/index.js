@@ -30,8 +30,8 @@ export default function ContactContent () {
             <Card.Body className="d-flex flex-row align-items-center">
               <IcStyled src="/ic-mail.svg" />
               <div className="d-flex flex-column align-items-start">
-                <span>Phone Number</span>
-                <h5 style={{ fontWeight: 'bold' }}>081381916256</h5>
+                <span>Mail</span>
+                <h5 style={{ fontWeight: 'bold' }}>sales@vionesia.com</h5>
               </div>
             </Card.Body>
           </Card_styled>
@@ -39,7 +39,7 @@ export default function ContactContent () {
             <Card.Body className="d-flex flex-row align-items-center">
               <IcStyled src="/ic-map.svg" />
               <div className="d-flex flex-column align-items-start">
-                <span>Phone Number</span>
+                <span>Revenue Tower Building, 25th Floor Sudirman Central Business District</span>
                 <h5 style={{ fontWeight: 'bold' }}>081381916256</h5>
               </div>
             </Card.Body>
