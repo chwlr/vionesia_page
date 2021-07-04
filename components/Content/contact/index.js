@@ -1,46 +1,78 @@
 import React from 'react'
-import Link from 'next/link'
-import { Container, Row, Col, Card } from 'react-bootstrap'
-import { FaMapMarkerAlt, FaPhoneAlt } from 'react-icons/fa'
-import { MdMail } from 'react-icons/md'
+import { Container, Row, Col, Card, Form } from 'react-bootstrap'
+import { Container_styled, IcStyled, Card_styled, Button_styled } from './style'
 
 
 export default function ContactContent () {
   return (
+      <>
+      <Container_styled fluid>
+        <Row style={{height: '100%', padding: '0 5vw 0 5vw', margin: '0 0 0 0' }}>
+          <Col className="d-flex flex-column justify-content-center align-items-center">
+            <h1 className="text-center" style={{ fontWeight: 'bold', textShadow: '2px 2px 2px #155BDA', color: 'white' }}>Let’s Collaborate With Us</h1>
+          </Col>
+        </Row>
+      </Container_styled>
       <Container className="my-5">
-        <Row>
-          <Col className="text-center">
-            <h4 style={{ margin: '2em 0 2em 0' }}>Get in touch!</h4>
-          </Col>
-        </Row>
-        <Row>
-          <Col lg="4" className="my-2">
-            <Card style={{ height: '170px', cursor: 'pointer' }}>
-              <Link target="_blank" href="https://www.google.com/maps/place/WeWork+Revenue+Tower/@-6.2274855,106.804918,17z/data=!4m12!1m6!3m5!1s0x2e69f13dae348f75:0x59801b675cfb09e8!2sWeWork+Revenue+Tower!8m2!3d-6.2274855!4d106.8071067!3m4!1s0x2e69f13dae348f75:0x59801b675cfb09e8!8m2!3d-6.2274855!4d106.8071067">
-                <Card.Body className=" d-flex flex-column align-items-center text-center">
-                  <FaMapMarkerAlt style={{ fontSize: '30px', color: '#155BDA' }} className="my-3"/>
-                  <small>Revenue Tower Building,  25th Floor Sudirman Central Business District Jl. Jend. Sudirman No.52-53, Jakarta, 12190, Indonesia</small>
-                </Card.Body>
-              </Link>
-            </Card>
-          </Col>
-          <Col lg="4" className="my-2" >
-            <Card style={{ height: '170px' }}>
-              <Card.Body className=" d-flex flex-column  align-items-center text-center">
-                <FaPhoneAlt style={{ fontSize: '30px', color: '#155BDA' }} className="my-3"/>
-                <small>+62 21 2598 5152</small>
+       <Row>
+         <Col xs={12} md={{ offset: 1 }}>
+         <h3 style={{ fontWeight: 'bold' }} className="text-start mx-4">Get In Touch</h3>
+          <Card_styled className="my-2">
+            <Card.Body className="d-flex flex-row align-items-center">
+              <IcStyled src="/ic-phone.svg" />
+              <div className="d-flex flex-column align-items-start">
+                <span>Phone Number</span>
+                <h5 style={{ fontWeight: 'bold' }}>081381916256</h5>
+              </div>
+            </Card.Body>
+          </Card_styled>
+          <Card_styled className="my-2">
+            <Card.Body className="d-flex flex-row align-items-center">
+              <IcStyled src="/ic-mail.svg" />
+              <div className="d-flex flex-column align-items-start">
+                <span>Phone Number</span>
+                <h5 style={{ fontWeight: 'bold' }}>081381916256</h5>
+              </div>
+            </Card.Body>
+          </Card_styled>
+          <Card_styled className="my-2">
+            <Card.Body className="d-flex flex-row align-items-center">
+              <IcStyled src="/ic-map.svg" />
+              <div className="d-flex flex-column align-items-start">
+                <span>Phone Number</span>
+                <h5 style={{ fontWeight: 'bold' }}>081381916256</h5>
+              </div>
+            </Card.Body>
+          </Card_styled>
+         </Col>
+         <Col xs={12} md={6}>
+            <Card_styled>
+              <Card.Body>
+              <Form>
+                <Form.Group>
+                  <Form.Label className="my-3">Full Name</Form.Label>
+                  <Form.Control  size="sm" type="text" placeholder="Full Name" id="form_name" />
+                </Form.Group>
+                <Form.Group>
+                  <Form.Label className="my-3">Email Address</Form.Label>
+                  <Form.Control  size="sm" type="email" placeholder="Email Address" id="form_email" />
+                </Form.Group>
+                <Form.Group>
+                  <Form.Label className="my-3">Messages</Form.Label>
+                  <Form.Control style={{  height: '250px' }} size="lg" as="textarea" type="text" placeholder="Messages" id="form_message"/>
+                </Form.Group>
+                <Button_styled>Submit</Button_styled>
+              </Form>
               </Card.Body>
-            </Card>
-          </Col>
-          <Col lg="4" className="my-2">
-            <Card style={{ height: '170px' }}>
-              <Card.Body className=" d-flex flex-column  align-items-center text-center">
-                <MdMail style={{ fontSize: '30px', color: '#155BDA' }} className="my-3"/>
-                <small>sales@vionesia.com</small>
-              </Card.Body>
-            </Card>
-          </Col>
-        </Row>
+            </Card_styled>
+         </Col>
+       </Row>
+       <Row>
+         <Col className="my-5">
+          <img src="/image_map.png" style={{ width: '100%', height: 'auto' }} />
+         </Col>
+       </Row>
       </Container>
+      </>
   )
 }

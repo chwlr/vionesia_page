@@ -3,17 +3,17 @@ import { Container, Navbar, Nav } from 'react-bootstrap'
 
 export default function Navcomponent () {
   return (
-    <Container>
+    <Container style={{ position: 'absolute', background: 'white', zIndex: '1', top: '20px', left: '0', right: '0', borderRadius: '15px' }}>
       <Navbar collapseOnSelect expand="lg" bg="transparent" variant="light">
-        <Navbar.Brand href="/"><img src="/vionesia_brand.png" alt="brand-vionesia" style={{ width: "50px", height: "auto" }} /></Navbar.Brand>
+        <Navbar.Brand href="/"><img src="/vionesia_brand.png" alt="brand-vionesia" style={{marginLeft: '15px', width: "50px", height: "auto" }} /></Navbar.Brand>
         <Navbar.Toggle aria-controls="responsive-navbar-nav" />
         <Navbar.Collapse id="responsive-navbar-nav">
           <Nav className="mx-auto text-center">
-            <Nav.Link className="mx-2" href="/">HOME</Nav.Link>
-            <Nav.Link className="mx-2" href="/products">PRODUCT</Nav.Link>
-            <Nav.Link className="mx-2" href="#">NEWS</Nav.Link>
-            <Nav.Link className="mx-2" href="/about">ABOUT</Nav.Link>
-            <Nav.Link className="mx-2" href="/contact">CONTACT</Nav.Link>
+            <Nav.Link style={{ color: '#155BDA' }} className="mx-2" href="/">HOME</Nav.Link>
+            <Nav.Link style={{ color: '#155BDA' }} className="mx-2" href="/solutions">SOLUTIONS</Nav.Link>
+            {/* <Nav.Link style={{ color: '#155BDA' }} className="mx-2" href="/clients">OUR CLIENTS</Nav.Link> */}
+            <Nav.Link style={{ color: '#155BDA' }} className="mx-2" href="/about">ABOUT US</Nav.Link>
+            <Nav.Link style={{ color: '#155BDA' }} className="mx-2" href="/contact">CONTACT</Nav.Link>
           </Nav>
         </Navbar.Collapse>
       </Navbar>

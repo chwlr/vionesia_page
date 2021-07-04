@@ -1,29 +1,57 @@
-import { Col, Row } from 'react-bootstrap'
+import { Container, Button, Card, Col } from 'react-bootstrap'
 import styled from 'styled-components'
 
-const Rowone = styled(Row)`
-  width: 100%;
-  margin: 10px 0 10px 0;
-  padding: 0;
-
-  @media screen and (max-width: 990px) {
-    flex-direction: column;
-  }
-`
-
-const Colstyled = styled(Col)`
-  /* background-image: url('/image_1.png'); */
-  background-color: white;
+const Container_styled = styled(Container)`
+  /* background-image: url('/Flat color Modern Isometric Illustration design - Teamwork.svg'), ; */
+  background-image: linear-gradient(to left, #6190e8, #a7bfe8);
   background-size: cover;
-  height: 100vh;
-  max-width: 100%;
+  background-repeat: no-repeat;
+  background-position: center;
+  height: 672px;
 `
 
-const Extra = styled.div`
-  height: calc(45% - 9.1em);
-  @media (max-width: 990px) {
-    display: none;
-  }
+const Discover_styled = styled(Container)`
+  background-image: url('/Flat color Modern Isometric Illustration design - Data Visualization.svg');
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: 30em 30em;
+  height: 30em;
 `
 
-export { Colstyled, Rowone, Extra }
+const Expertise_styled = styled(Container)`
+  background-image: url('/Flat color Modern Isometric Illustration design - Data Analysis Expert.svg');
+  background-position: 75% 80px;
+  background-repeat: no-repeat;
+  background-size: 30em 30em;
+  height: 650px;
+`
+
+const Button_styled = styled(Button)`
+  border-radius: 35px;
+  height: auto;
+  font-size: 15px;
+  padding: 3px 15px 3px 15px;
+  margin: 2px;
+`
+
+const Card_styled = styled(Card)`
+  margin: 1em 0 1em 0;
+  padding: 0.2em 1em 0.2em 1em;
+  border: 1px solid rgba(50, 132, 255, 0.25);
+  border-radius: 35px;
+  background-color: white;
+`
+
+const Col_discover = styled(Col)`
+  margin-top: 2em;
+`
+
+const Dicover_card = styled(Card)`
+  border: none;
+  border-radius: 35px;
+  background-color: white;
+  box-shadow: 0px 48px 120px rgba(50, 132, 255, 0.25);
+`
+
+
+export { Container_styled, Button_styled, Card_styled, Discover_styled, Col_discover, Dicover_card, Expertise_styled }

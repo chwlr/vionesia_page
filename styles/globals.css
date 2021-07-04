@@ -6,6 +6,10 @@ body {
     Ubuntu, Cantarell, Fira Sans, Droid Sans, Helvetica Neue, sans-serif;
 }
 
+main {
+  height: 100%;
+}
+
 a {
   color: inherit;
   text-decoration: none;
@@ -15,8 +19,9 @@ a {
   box-sizing: border-box;
 }
 
-@media screen and (max-width: 990px) {
-  #sec__one, #sec__two, #sec__tri {
-    height: 25em;
-  }
+#home_section {
+  background-image: url('/Flat color Modern Isometric Illustration design - Teamwork.svg');
+  background-repeat: no-repeat;
+  background-size: 500px auto;
+  background-position: 20% 60%;
 }
