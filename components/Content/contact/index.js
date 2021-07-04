@@ -39,8 +39,8 @@ export default function ContactContent () {
             <Card.Body className="d-flex flex-row align-items-center">
               <IcStyled src="/ic-map.svg" />
               <div className="d-flex flex-column align-items-start">
-                <span>Revenue Tower Building, 25th Floor Sudirman Central Business District</span>
-                <h5 style={{ fontWeight: 'bold' }}>081381916256</h5>
+                <span>Location</span>
+                <h5 style={{ fontWeight: 'bold' }}>Revenue Tower Building, 25th Floor Sudirman Central Business District</h5>
               </div>
             </Card.Body>
           </Card_styled>
