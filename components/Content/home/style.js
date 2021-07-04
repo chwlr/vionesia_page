@@ -23,7 +23,7 @@ const Expertise_styled = styled(Container)`
   background-position: 75% 80px;
   background-repeat: no-repeat;
   background-size: 30em 30em;
-  height: 650px;
+  height: 100%;
 `
 
 const Button_styled = styled(Button)`
@@ -32,6 +32,10 @@ const Button_styled = styled(Button)`
   font-size: 15px;
   padding: 3px 15px 3px 15px;
   margin: 2px;
+  a {
+    text-decoration: none;
+    color: white;
+  }
 `
 
 const Card_styled = styled(Card)`
@@ -53,5 +57,11 @@ const Dicover_card = styled(Card)`
   box-shadow: 0px 48px 120px rgba(50, 132, 255, 0.25);
 `
 
+const IcStyled = styled.img`
+  margin: 3em;
+  padding: 3px;
+  height: 40px;
+`
 
-export { Container_styled, Button_styled, Card_styled, Discover_styled, Col_discover, Dicover_card, Expertise_styled }
+
+export { Container_styled, IcStyled, Button_styled, Card_styled, Discover_styled, Col_discover, Dicover_card, Expertise_styled }
