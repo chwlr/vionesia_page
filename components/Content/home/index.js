@@ -11,8 +11,8 @@ export default function HomeContent () {
                   <h1 className="text-center" style={{ fontWeight: 'bold', textShadow: '2px 2px 2px #155BDA', color: 'white' }}>We Understand Your <br></br> Business Demand</h1>
                   <Row>
                     <Col>
-                      <Button_styled className="mx-2"><a href="/contact"> Contact</a> </Button_styled>
-                      <Button_styled><a href="/solutions"> Solutions</a></Button_styled>
+                      <Button_styled className="mx-2"><a href="/contact">Contact Us</a> </Button_styled>
+                      <Button_styled><a href="/solutions">Solutions</a></Button_styled>
                     </Col>
                   </Row>
                   </Col>
@@ -42,7 +42,7 @@ export default function HomeContent () {
                   <Row>
                     <Col_discover md={{ span: 4, offset: 1 }}>
                       <Dicover_card>
-                        <Card.Body>Consulting Practices Since Early 2000.</Card.Body>
+                        <Card.Body>Consulting Practices Since Early 2000</Card.Body>
                       </Dicover_card>
                     </Col_discover>
                   </Row>
