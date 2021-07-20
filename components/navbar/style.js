@@ -26,14 +26,15 @@ const NavStyle = styled.div`
       height: auto;
     }
   }
-  .navbar-light .navbar-nav .nav-link {
+  
+  a {
     color: white;
     font-weight: 400;
     margin: 0 15px 0 15px;
     &:hover{
       text-decoration: underline;
-        }
     }
+  }
 `
 
 export { NavStyle, IcStyled, Ncntsty, BrandStyled }

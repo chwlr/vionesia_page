@@ -26,8 +26,7 @@ const Card_styled = styled(Card)`
   border: 1px solid rgba(50, 132, 255, 0.25);
   border-radius: 15px;
   background-color: white;
-  min-height: 160px;
-  width: 340px;
+  min-height: 200px;
 `
 
 

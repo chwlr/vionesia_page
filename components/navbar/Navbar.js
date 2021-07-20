@@ -15,10 +15,10 @@ export default function Navcomponent () {
         <Navbar.Toggle aria-controls="responsive-navbar-nav" onClick={handleClick}>{click ? <FaTimes color="#FFF"/> : <FaBars color="#FFF"/>}</Navbar.Toggle>
         <Navbar.Collapse>
           <Nav className=" mx-auto text-center">
-            <Link href="/"><Nav.Link href="/">Home</Nav.Link></Link>
-            <Link href="/"><Nav.Link href="/solutions">Solutions</Nav.Link></Link>
-            <Link href="/about"><Nav.Link href="/about">About Us</Nav.Link></Link>
-            <Link href="/contact"><Nav.Link href="/contact">Contact</Nav.Link></Link>
+            <Link href="/" className="link-style">Home</Link>
+            <Link href="/solutions">Solutions</Link>
+            <Link href="/about">About Us</Link>
+            <Link href="/contact">Contact</Link>
           </Nav>
         </Navbar.Collapse>
         <Navbar.Collapse className="justify-content-end">
