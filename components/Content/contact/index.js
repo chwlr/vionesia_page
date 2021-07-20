@@ -6,13 +6,6 @@ import { Container_styled, IcStyled, Card_styled, Button_styled } from './style'
 export default function ContactContent () {
   return (
       <>
-      <Container_styled fluid>
-        <Row style={{height: '100%', padding: '0 5vw 0 5vw', margin: '0 0 0 0' }}>
-          <Col className="d-flex flex-column justify-content-center align-items-center">
-            <h1 className="text-center" style={{ fontWeight: 'bold', textShadow: '2px 2px 2px #155BDA', color: 'white' }}>Let’s Collaborate With Us</h1>
-          </Col>
-        </Row>
-      </Container_styled>
       <Container className="my-5">
        <Row>
          <Col xs={12} md={{ offset: 1 }}>

@@ -4,20 +4,19 @@ import { Stext, Button_styled, IcStyled } from './style'
  
 export default function Footer() {
   return (
-    <footer style={{  background: 'linear-gradient(to left, #6190e8, #a7bfe8)' }}>
+    <footer style={{  background: 'rgba(22, 26, 29, 0.9)' }}>
       <Container>
         <Row>
           <Col className="d-flex flex-column justify-content-start align-items-center">
-          <h3 className="text-center mt-3" style={{ fontWeight: 'bold', textShadow: '2px 2px 2px #155BDA', color: 'white' }}>Start Your Digital Business With Us Today</h3>
+          <h4 className="text-center mt-3" style={{ textShadow: '2px 2px 2px #335c67', color: 'white' }}>Start Your Digital Business With Us Today</h4>
           <Button_styled>Get Started</Button_styled>
           </Col>
         </Row>
         <Row>
-        <h6 className="text-center mt-3" style={{ fontWeight: 'bold', textShadow: '2px 2px 2px #155BDA', color: 'white' }}>Our Social Media</h6>
+        <h6 className="text-center mt-3" style={{ fontWeight: 'bold', textShadow: '2px 2px 2px #335c67', color: 'white' }}>Our Social Media</h6>
         <Col className="d-flex flex-row justify-content-center align-items-center">
               <IcStyled src="/ic-facebook.svg" />
               <IcStyled src="/ic-instagram.svg" />
-              <IcStyled src="/ic-twitter.svg" />
               <IcStyled src="/ic-linkedin.svg" />
           </Col>
         </Row>

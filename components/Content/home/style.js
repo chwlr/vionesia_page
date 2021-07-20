@@ -32,6 +32,12 @@ const Button_styled = styled(Button)`
   font-size: 15px;
   padding: 3px 15px 3px 15px;
   margin: 2px;
+  background-color: #343a40;
+  border-color: white;
+  &:hover {
+    background-color: #adb5bd;
+    border-color: white;
+  }
   a {
     text-decoration: none;
     color: white;

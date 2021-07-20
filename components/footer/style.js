@@ -11,10 +11,11 @@ const Button_styled = styled(Button)`
   font-size: 15px;
   padding: 3px 15px 3px 15px;
   margin: 2px;
+  background-color: white;
 `
 
 const IcStyled = styled.img`
-  margin: 0 0.5em 1em 0;
+  margin: 0 0.5em 1em 0.5em;
   height: 30px;
 `
 

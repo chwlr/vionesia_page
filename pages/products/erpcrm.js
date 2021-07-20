@@ -1,16 +1,16 @@
 import Head from 'next/head'
-import SolutionContent from '../components/Content/solution'
+import SolutionOne from '../../components/Content/solution/erp_crm'
 
-export default function Solutions() {
+export default function ProductErpcrm() {
   return (
     <div>
       <Head>
         <title>VIONESIA SOLUTIONS</title>
-        <meta name="description" content="vionesia Solutions page" />
+        <meta name="description" content="vionesia Erp & CRM page" />
         <link rel="icon" href="/favicon.ico" />
       </Head>
       <main>
-        <SolutionContent />
+        <SolutionOne />
       </main>
     </div>
   )
