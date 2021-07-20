@@ -18,9 +18,8 @@ export default function SolutionOne() {
                     </Col>
                   </Row>
                  </Col>
-                 <Col lg={8} style={{ minHeight: '90vh', minWidth: '100%', background: '#adb5bd' }} className="pb-5 d-flex align-self-center justify-content-center">
+                 <Col lg={8} style={{ minHeight: '90vh', background: '#adb5bd' }} className="d-flex align-items-center justify-content-center">
                   <Row className="text-center">
-                  <div></div>
                     <Col >
                       <Row >
                         <Col className="d-flex flex-wrap justify-content-evenly">

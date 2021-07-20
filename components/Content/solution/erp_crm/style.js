@@ -21,13 +21,13 @@ const Button_styled = styled(Button)`
 `
 
 const Card_styled = styled(Card)`
-  margin: 1em 0 1em 0;
+  margin: 1em 2em 1em 2em;
   padding: 0.2em 1em 0.2em 1em;
   border: 1px solid rgba(50, 132, 255, 0.25);
-  border-radius: 35px;
+  border-radius: 15px;
   background-color: white;
   min-height: 160px;
-  min-width: 400px;
+  width: 340px;
 `
 
 
