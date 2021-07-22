@@ -21,12 +21,11 @@ const Button_styled = styled(Button)`
 `
 
 const Card_styled = styled(Card)`
-  margin: 1em 2em 1em 2em;
-  padding: 0.2em 1em 0.2em 1em;
-  border: 1px solid rgba(50, 132, 255, 0.25);
+  margin: 0.5em;
+  border: none;
   border-radius: 15px;
   background-color: white;
-  min-height: 200px;
+  filter: drop-shadow(0px 48px 120px rgba(29, 53, 87, 0.25));
 `
 
 
