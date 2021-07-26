@@ -1,10 +1,10 @@
 import React from 'react'
 import { Row, Col, Card } from 'react-bootstrap'
-import { Card_styled } from './style'
+import { Card_styled } from '../style'
 
 export default function Acimatica () {
   return (
-    <Row id="acumatica" className="my-5">
+    <Row id="acumatica" className="my-5 transform-right-left">
             <Row>
               <Col><h4 className="bold text-center py-5" style={{ color: 'black' }}>Acumatica Cloud ERP Software</h4></Col>
             </Row>

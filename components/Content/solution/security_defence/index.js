@@ -2,13 +2,12 @@ import React, {useState} from 'react'
 import { Container, Row, Col } from 'react-bootstrap'
 import { Button_styled } from '../style'
 import Link from 'next/link'
-import Oracle from './Oracle'
-import Acumatica from './Acumatica'
 import Default from './Default'
-import Cadena from './Cadena'
+import Freshvale from './Freshvale'
+import Tenable from './Tenable'
 
 
-const SolutionOne = () => {
+const SolutionTwo = () => {
 
   const [sol, setSol] = useState('')
   const handleClick = (param) => setSol(param)
@@ -16,14 +15,14 @@ const SolutionOne = () => {
   const RenderCase = (param) => {
     const a = param.a;
     switch (a) {
-      case 'oracle':
-        return <Oracle  />
-      case 'acumatica':
-        return <Acumatica  />
+      case 'freshvale':
+        return <Freshvale  />
+      case 'tenable':
+        return <Tenable  />
       case 'cadena':
         return <Cadena  />
       default:
-        return <Default />;
+        return <Default />
     }
  }
 
@@ -34,11 +33,11 @@ const SolutionOne = () => {
         <Col lg={4} className="content-sidebar transform-left-right">
           <Row className="my-5">
             <Col className="pb-5 my-5 mx-4" style={{ color: 'white' }}>
-              <h4 className="bold pb-3">System Integration</h4>
-              <p className="p-lead mx-4"  onClick={() => handleClick('oracle')}>Oracle</p>
-              <p className="p-lead mx-4" onClick={() => handleClick('acumatica')}>Acumatica</p>
+              <h4 className="bold pb-3">Security & Defence</h4>
+              <p className="p-lead mx-4"  onClick={() => handleClick('freshvale')}>FreshVale</p>
+              <p className="p-lead mx-4" onClick={() => handleClick('tenable')}>Tenable</p>
               {/* <p className="p-lead mx-4">Phicara</p> */}
-              <p className="p-lead mx-4" onClick={() => handleClick('cadena')}>Cadena</p>
+              <p className="p-lead mx-4" onClick={() => handleClick('cadena')}>VisionLabs</p>
               <Link href="/"><Button_styled className="my-3">back</Button_styled></Link>
               {/* when click back toggle class reverse */}
               
@@ -53,4 +52,4 @@ const SolutionOne = () => {
   )
 }
 
-export default SolutionOne
+export default SolutionTwo

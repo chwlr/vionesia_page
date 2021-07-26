@@ -103,3 +103,60 @@ h6 {
   max-height: 100%;
 }
 
+.parent {
+  background: black;
+  perspective: 500px;
+}
+
+.transform-left-right {
+  animation: leftRight 2s ease 0s 1 normal forwards;
+}
+
+.transform-left-right-reverse {
+  animation: leftRightreverse 2s ease 0s 1 normal forwards;
+}
+
+.transform-right-left {
+  animation: rightLeft 2s ease 0s 1 normal forwards;
+}
+
+.transform-right-left-reverse {
+  animation: rightLeftreverse 2s ease 0s 1 normal forwards;
+}
+
+@keyframes leftRight {
+  from {
+   transform:translate(-100%, 0)
+  }
+  to {
+   transform:translate(0, 0)
+  }
+ }
+
+ @keyframes leftRightreverse {
+  from {
+   transform:translate(0, 0)
+  }
+  to {
+   transform:translate(-100%, 0)
+  }
+ }
+
+@keyframes rightLeft {
+  from {
+   transform:translate(50%, 0)
+  }
+  to {
+   transform:translate(0, 0)
+  }
+ }
+
+ @keyframes rightLeftreverse {
+  from {
+   transform:translate(50%, 0)
+  }
+  to {
+   transform:translate(-50%, 0)
+  }
+ }
+
