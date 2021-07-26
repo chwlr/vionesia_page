@@ -5,7 +5,7 @@ import Image from 'next/image'
 
 export default function Freshvale () {
   return (
-    <Row id="oracle" className="my-5 transform-right-left">
+    <Row id="oracle" className="my-5">
             <Row>
               <Col>
                 <h4 className="bold text-center py-5" style={{ color: 'black' }}>FreshVale Solutions</h4>
