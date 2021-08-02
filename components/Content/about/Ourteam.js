@@ -5,14 +5,14 @@ import Image from 'next/image'
 
 export default function Ourteam () {
   return (
-              <Row style={{ height: '100%', background: 'white' }}>
+              <Row style={{ height: '100%', background: 'white' }} className="transform-right-left">
                 <Row className="my-5">
                   <Col className="mx-auto my-auto">
                     <h4 className="bold text-center px-5 py-2">Our Team</h4>
                   </Col>
                 </Row>
                 <Row className="my-2 ">
-                  <Col xs="6" md="4" lg="4" className="mx-auto">
+                  <Col xs="12" md="4" lg="4" className="mx-auto">
                       <Card_styled>
                         <Card.Body>
                           <Image src="/user.png" layout="responsive" alt="Unmanned Technologies" width={300} height={200} />
@@ -21,7 +21,7 @@ export default function Ourteam () {
                         </Card.Body>
                       </Card_styled>
                   </Col>
-                  <Col xs="6" md="4" lg="4" className="mx-auto">
+                  <Col xs="12" md="4" lg="4" className="mx-auto">
                       <Card_styled>
                         <Card.Body>
                           <Image src="/user.png" layout="responsive" alt="Unmanned Technologies" width={300} height={200} />
@@ -32,7 +32,7 @@ export default function Ourteam () {
                   </Col>
                 </Row>
                 <Row className="my-2 mb-5">
-                  <Col xs="6" md="4" lg="4">
+                  <Col xs="12" md="4" lg="4">
                       <Card_styled>
                         <Card.Body>
                           <Image src="/user.png" layout="responsive" alt="Unmanned Technologies" width={300} height={200} />
@@ -41,7 +41,7 @@ export default function Ourteam () {
                         </Card.Body>
                       </Card_styled>
                   </Col>
-                  <Col xs="6" md="4" lg="4">
+                  <Col xs="12" md="4" lg="4">
                       <Card_styled>
                         <Card.Body>
                           <Image src="/user.png" layout="responsive" alt="Unmanned Technologies" width={300} height={200} />
@@ -50,7 +50,7 @@ export default function Ourteam () {
                         </Card.Body>
                       </Card_styled>
                   </Col>
-                  <Col xs="6" md="4" lg="4">
+                  <Col xs="12" md="4" lg="4">
                       <Card_styled>
                         <Card.Body>
                           <Image src="/user.png" layout="responsive" alt="Unmanned Technologies" width={300} height={200} />
