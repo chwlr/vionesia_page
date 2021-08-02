@@ -26,6 +26,30 @@ const NavStyle = styled.div`
       height: auto;
     }
   }
+
+  #basic-nav-dropdown {
+    color: white;
+  }
+
+  .dropdown .nav-link {
+    color: white;
+    &:hover{
+      color: white;
+      text-decoration: underline;
+    }
+  }
+  .navbar-light .navbar-nav .show > .nav-link {
+    color: white;
+  }
+
+  .navbar-nav .dropdown-menu {
+    background: rgba(22, 26, 29, 0.9);
+    color: white;
+    border: none;
+    @media (max-width: 875px) {
+      background: transparent;
+    }
+  }
   
   a {
     color: white;

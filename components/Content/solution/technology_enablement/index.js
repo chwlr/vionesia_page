@@ -2,13 +2,13 @@ import React, {useState} from 'react'
 import { Container, Row, Col } from 'react-bootstrap'
 import { Button_styled } from '../style'
 import Link from 'next/link'
-import Default from './Default'
-import Freshvale from './Freshvale'
-import Tenable from './Tenable'
-import Visionlabs from './Visionlabs'
+import MobileDev from './MobileDev'
+import Webapp from './Webapp'
+import VirtualReality from './VirtualReality'
+import IoT from './IoT'
 
 
-const SolutionTwo = () => {
+const SolutionTre = () => {
 
   const [sol, setSol] = useState('')
   const handleClick = (param) => setSol(param)
@@ -16,14 +16,16 @@ const SolutionTwo = () => {
   const RenderCase = (param) => {
     const a = param.a;
     switch (a) {
-      case 'freshvale':
-        return <Freshvale  />
-      case 'tenable':
-        return <Tenable  />
-      case 'visionlabs':
-        return <Visionlabs  />
+      case 'mobile':
+        return <MobileDev  />
+      case 'webapps':
+        return <Webapp  />
+      case 'virtual':
+        return <VirtualReality  />
+      case 'internet':
+        return <IoT  />
       default:
-        return <Default />
+        return '<Default />'
     }
  }
 
@@ -35,13 +37,11 @@ const SolutionTwo = () => {
           <Row className="my-5">
             <Col className="pb-5 my-5 mx-4" style={{ color: 'white' }}>
               <h4 className="bold pb-3">Security & Defence</h4>
-              <p className="p-lead mx-4"  onClick={() => handleClick('freshvale')}>FreshVale</p>
-              <p className="p-lead mx-4" onClick={() => handleClick('tenable')}>Tenable</p>
-              {/* <p className="p-lead mx-4">Phicara</p> */}
-              <p className="p-lead mx-4" onClick={() => handleClick('visionlabs')}>VisionLabs</p>
+              <p className="p-lead mx-4"  onClick={() => handleClick('mobile')}>Mobile Apps Development</p>
+              <p className="p-lead mx-4" onClick={() => handleClick('webapps')}>WebApps Integrations</p>
+              <p className="p-lead mx-4" onClick={() => handleClick('virtual')}>Virtual Reality</p>
+              <p className="p-lead mx-4" onClick={() => handleClick('internet')}>Internet of Things (IoT)</p>
               <Link href="/"><Button_styled className="my-3">back</Button_styled></Link>
-              {/* when click back toggle class reverse */}
-              
             </Col>
           </Row>
         </Col>
@@ -53,4 +53,4 @@ const SolutionTwo = () => {
   )
 }
 
-export default SolutionTwo
+export default SolutionTre

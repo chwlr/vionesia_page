@@ -1,7 +1,7 @@
 import React from 'react'
 import { Row, Col } from 'react-bootstrap'
 
-export default function Acimatica () {
+export default function Default () {
   return (
  
               <Row id="system-integration"  style={{ minHeight: '95vh', background: 'white' }}>

@@ -30,7 +30,7 @@ export default function HomeContent () {
                    <Col className="pb-5 my-5 mx-4" style={{ color: 'white' }}>
                       <h4 className="bold" >Technology Enablement</h4>
                       <p className="p-lead">Mobile Apps Development, WebApps Integrations, Virtual Reality, Internet of Things (IoT)</p>
-                      <Link href="/products/erpcrm"><Button_styled>Details</Button_styled></Link>
+                      <Link href="/products/technology-enablement"><Button_styled>Details</Button_styled></Link>
                     </Col>
                   </Row>
                  </Col>
