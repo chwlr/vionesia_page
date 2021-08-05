@@ -7,6 +7,11 @@ const Ncntsty = styled(Container)`
   padding: 10px 50px 10px 50px;
 `
 
+const Dropdowner = styled(Container)`
+  height: 250px;
+  width: 100%;
+`
+
 const IcStyled = styled.img`
   padding: 3px;
   height: 40px;
@@ -25,19 +30,16 @@ const NavStyle = styled.div`
     @media (max-width: 977px) {
       height: auto;
     }
-  }
-
-  #basic-nav-dropdown {
-    color: white;
-  }
-
-  .dropdown .nav-link {
-    color: white;
-    &:hover{
+    span {
+      color: white;
+      margin: 0 15px 0 15px;
+      &:hover{
       color: white;
       text-decoration: underline;
     }
+    }
   }
+
   .navbar-light .navbar-nav .show > .nav-link {
     color: white;
   }
@@ -61,4 +63,4 @@ const NavStyle = styled.div`
   }
 `
 
-export { NavStyle, IcStyled, Ncntsty, BrandStyled }
+export { Dropdowner, NavStyle, IcStyled, Ncntsty, BrandStyled }

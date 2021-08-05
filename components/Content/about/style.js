@@ -1,4 +1,4 @@
-import { Container, Button, Card } from 'react-bootstrap'
+import { Container, Button, Card, Col, Row } from 'react-bootstrap'
 import styled from 'styled-components'
 
 const Container_styled = styled(Container)`
@@ -17,7 +17,19 @@ const Card_styled = styled(Card)`
   background-color: white;
   filter: drop-shadow(0px 48px 120px rgba(29, 53, 87, 0.25));
 `
+const ColStyled = styled(Col)`
+  background-image: url('/Flat color Modern Isometric Illustration design - Data Visualization.svg');
+  background-size: 100px 100px;
+  background-position: center;
+  background-repeat: no-repeat;
+`
 
+const RowStyled = styled(Row)`
+  /* background-image: url('/Flat color Modern Isometric Illustration design - Data Visualization.svg'); */
+  background-size: 100vw 60vh;
+  background-position: bottom;
+  background-repeat: no-repeat;
+`
 
 const Button_styled = styled(Button)`
   border-radius: 35px;
@@ -37,4 +49,12 @@ const Button_styled = styled(Button)`
   }
 `
 
-export { Container_styled, Button_styled, Card_styled }
+const ShadowStyled = styled(Card)`
+  border: none;
+  border-radius: 35px;
+  background-color: white;
+  box-shadow: 0px 48px 120px rgba(50, 132, 255, 0.25);
+  width: 100%;
+`
+
+export { Container_styled, ColStyled, RowStyled, Button_styled, Card_styled, ShadowStyled }

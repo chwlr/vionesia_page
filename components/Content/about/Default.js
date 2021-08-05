@@ -4,7 +4,7 @@ import { Row, Col } from 'react-bootstrap'
 export default function Default () {
   return (
  
-              <Row id="system-integration"  style={{ height: '100%', background: 'white' }}>
+              <Row className="transform-right-left" style={{ height: '100%', background: 'white' }}>
                 <Col className="mx-auto my-auto">
                   <h5 className="bold text-center px-5 py-2">Vionesia<br></br> an enterprise consulting organization, technology enabler & system integrator</h5>
                   <p className="p-lead text-center px-5 py-2">

@@ -4,6 +4,7 @@ import { Button_styled } from './style'
 import Link from 'next/link'
 import Default from './Default'
 import Ourteam from './Ourteam'
+import Expertise from './Expertise'
 
 
 
@@ -18,7 +19,7 @@ const AboutContent = () => {
       case 'ourteam':
         return <Ourteam />
       case 'area':
-        return null
+        return <Expertise />
       default:
         return <Default />;
     }
