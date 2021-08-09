@@ -18,21 +18,21 @@ export default function Navcomponent () {
       <Navbar collapseOnSelect expand="lg" bg="transparent" variant="light">
         <Link href="/"><Navbar.Brand href="/"><BrandStyled src="/logo_text.png" alt="brand-vionesia"  /></Navbar.Brand></Link>
         <Navbar.Toggle onClick={handleClick}>{click ? <FaTimes color="#FFF"/> : <FaBars color="#FFF"/>}</Navbar.Toggle>
-        <Navbar>
+        <Navbar.Collapse id="responsive-navbar-nav">
           <Nav className="mx-auto d-flex text-center align-items-center">
             <Link href="/" >Home</Link>
             <span href="/" onClick={handleDrop}>Solution</span>
             <Link href="/about">About Us</Link>
             <Link href="/contact">Contact</Link>
           </Nav>
-        </Navbar>
-        <Navbar className="justify-content-end">
+        </Navbar.Collapse>
+        <Navbar.Collapse className="justify-content-end">
           <Nav className=" mx-auto text-center">
             <Link href="/"><IcStyled src="/ic-facebook.svg" /></Link>
             <Link href="/"><IcStyled src="/ic-instagram.svg" /></Link>
             <Link href="/"><IcStyled src="/ic-linkedin.svg" /></Link>
           </Nav>
-        </Navbar>
+        </Navbar.Collapse>
       </Navbar>
       {drop ? <Dropdown /> : null}
     </Ncntsty>
