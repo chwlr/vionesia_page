@@ -106,28 +106,33 @@ h6 {
   max-height: 100%;
 }
 
+.home-container {
+    min-height: 100%;
+}
+
+
 .parent {
-  background: black;
+  background: transparent;
   perspective: 500px;
 }
 
 .transform-left-right {
-  animation: leftRight 2s ease 0s 1 normal forwards;
+  animation: left-right 2s ease 0s 1 normal forwards;
 }
 
 .transform-left-right-reverse {
-  animation: leftRightreverse 2s ease 0s 1 normal forwards;
+  animation: left-right-reverse 2s ease 0s 1 normal forwards;
 }
 
 .transform-right-left {
-  animation: rightLeft 2s ease 0s 1 normal forwards;
+  animation: right-left 2s ease 0s 1 normal forwards;
 }
 
 .transform-right-left-reverse {
-  animation: rightLeftreverse 2s ease 0s 1 normal forwards;
+  animation: right-left-reverse 2s ease 0s 1 normal forwards;
 }
 
-@keyframes leftRight {
+@keyframes left-right {
   from {
    transform:translate(-100%, 0)
   }
@@ -136,7 +141,7 @@ h6 {
   }
  }
 
- @keyframes leftRightreverse {
+ @keyframes left-right-reverse {
   from {
    transform:translate(0, 0)
   }
@@ -145,7 +150,7 @@ h6 {
   }
  }
 
-@keyframes rightLeft {
+@keyframes right-left {
   from {
    transform:translate(50%, 0)
   }
@@ -154,7 +159,7 @@ h6 {
   }
  }
 
- @keyframes rightLeftreverse {
+ @keyframes right-left-reverse {
   from {
    transform:translate(50%, 0)
   }

@@ -7,12 +7,6 @@ export default function Footer() {
     <footer style={{  background: 'rgba(22, 26, 29, 0.9)' }}>
       <Container>
         <Row>
-          <Col className="d-flex flex-column justify-content-start align-items-center">
-          <h4 className="text-center mt-3" style={{ textShadow: '2px 2px 2px #335c67', color: 'white' }}>Start Your Digital Business With Us Today</h4>
-          <Button_styled>Get Started</Button_styled>
-          </Col>
-        </Row>
-        <Row>
         <h6 className="text-center mt-3" style={{ fontWeight: 'bold', textShadow: '2px 2px 2px #335c67', color: 'white' }}>Our Social Media</h6>
         <Col className="d-flex flex-row justify-content-center align-items-center">
               <IcStyled src="/ic-facebook.svg" />

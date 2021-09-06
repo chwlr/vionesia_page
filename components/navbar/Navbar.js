@@ -7,9 +7,7 @@ import Dropdown from './Dropdown'
 
 export default function Navcomponent () {
   const [click, setClick] = useState(false)
-  const [drop, setDrop] = useState(false)
   const handleClick = () => setClick(!click)
-  const handleDrop = () => setDrop(!drop)
 
 
   return (
@@ -21,20 +19,18 @@ export default function Navcomponent () {
         <Navbar.Collapse id="responsive-navbar-nav">
           <Nav className="mx-auto d-flex text-center align-items-center">
             <Link href="/" >Home</Link>
-            <span href="/" onClick={handleDrop}>Solution</span>
             <Link href="/about">About Us</Link>
             <Link href="/contact">Contact</Link>
           </Nav>
         </Navbar.Collapse>
         <Navbar.Collapse className="justify-content-end">
-          <Nav className=" mx-auto text-center">
+          <Nav className="mx-auto text-center" id="social-media-nav">
             <Link href="/"><IcStyled src="/ic-facebook.svg" /></Link>
             <Link href="/"><IcStyled src="/ic-instagram.svg" /></Link>
             <Link href="/"><IcStyled src="/ic-linkedin.svg" /></Link>
           </Nav>
         </Navbar.Collapse>
       </Navbar>
-      {drop ? <Dropdown /> : null}
     </Ncntsty>
     </NavStyle>
   )

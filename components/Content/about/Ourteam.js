@@ -26,7 +26,7 @@ export default function Ourteam () {
                         <Card.Body>
                           <Image src="/user.png" layout="responsive" alt="Unmanned Technologies" width={300} height={200} />
                           <p className="p-lead text-center pt-3" style={{ marginBottom: '0' }}>Rachmad Novyardi</p>
-                          <p className="p-regular text-center pt-1" style={{ marginBottom: '0' }}>Founder, Enterprise Solution</p>
+                          <p className="p-regular text-center pt-1" style={{ marginBottom: '0' }}>Co-Founder, Enterprise Solution</p>
                         </Card.Body>
                       </Card_styled>
                   </Col>
