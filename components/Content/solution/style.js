@@ -1,4 +1,4 @@
-import { Container, Button, Card, Col } from 'react-bootstrap'
+import { Button, Card } from 'react-bootstrap'
 import styled from 'styled-components'
 
 

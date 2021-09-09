@@ -81,13 +81,6 @@ h6 {
   box-sizing: border-box;
 }
 
-.non-active {
-  display: none;
-}
-
-.active {
-  display: flex;
-}
 
 .navbar-toggler:focus,
 .navbar-toggler:active,
@@ -96,22 +89,20 @@ h6 {
     box-shadow: none;
 }
 
-.content-details {
-  background: #fff;
-  min-height: 90vh;
-}
-
-.content-sidebar {
-  background: #343a40;
-  max-height: 100%;
-}
-
 .home-container {
     min-height: 100%;
 }
 
+.content-sidebar {
+    background-color: #343a40;
+    min-height: 100vh;
+}
 
-.parent {
+.side-navigation-tab {
+    cursor: pointer;
+}
+
+.parent-animation {
   background: transparent;
   perspective: 500px;
 }
@@ -166,6 +157,14 @@ h6 {
   to {
    transform:translate(-50%, 0)
   }
+ }
+ 
+ @media only screen and (max-width: 1000px) {
+     #navbar-social-media {
+         flex-direction: row;
+         align-items: center;
+         justify-content: center;
+     }
  }
 
  @media only screen and (max-width : 768px) {

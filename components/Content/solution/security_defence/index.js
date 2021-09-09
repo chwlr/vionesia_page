@@ -17,11 +17,11 @@ const SolutionTwo = () => {
     const a = param.a;
     switch (a) {
       case 'freshvale':
-        return <Freshvale  />
+        return <Freshvale />
       case 'tenable':
-        return <Tenable  />
+        return <Tenable />
       case 'visionlabs':
-        return <Visionlabs  />
+        return <Visionlabs />
       default:
         return <Default />
     }
@@ -35,10 +35,10 @@ const SolutionTwo = () => {
           <Row className="my-5">
             <Col className="pb-5 my-5 mx-4" style={{ color: 'white' }}>
               <h4 className="bold pb-3">Security & Defence</h4>
-              <p className="p-lead mx-4"  onClick={() => handleClick('freshvale')}>FreshVale</p>
-              <p className="p-lead mx-4" onClick={() => handleClick('tenable')}>Tenable</p>
+              <p className="p-lead mx-4 side-navigation-tab" onClick={() => handleClick('freshvale')}>FreshVale</p>
+              <p className="p-lead mx-4 side-navigation-tab" onClick={() => handleClick('tenable')}>Tenable</p>
               {/* <p className="p-lead mx-4">Phicara</p> */}
-              <p className="p-lead mx-4" onClick={() => handleClick('visionlabs')}>VisionLabs</p>
+              <p className="p-lead mx-4 side-navigation-tab" onClick={() => handleClick('visionlabs')}>VisionLabs</p>
               <Link href="/"><Button_styled className="my-3">back</Button_styled></Link>
               {/* when click back toggle class reverse */}
               

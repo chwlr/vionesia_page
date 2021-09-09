@@ -6,6 +6,7 @@ import MobileDev from './MobileDev'
 import Webapp from './Webapp'
 import VirtualReality from './VirtualReality'
 import IoT from './IoT'
+import Default from "./Default"
 
 
 const SolutionTre = () => {
@@ -25,7 +26,7 @@ const SolutionTre = () => {
       case 'internet':
         return <IoT  />
       default:
-        return '<Default />'
+        return <Default />
     }
  }
 
@@ -37,10 +38,10 @@ const SolutionTre = () => {
           <Row className="my-5">
             <Col className="pb-5 my-5 mx-4" style={{ color: 'white' }}>
               <h4 className="bold pb-3">Security & Defence</h4>
-              <p className="p-lead mx-4"  onClick={() => handleClick('mobile')}>Mobile Apps Development</p>
-              <p className="p-lead mx-4" onClick={() => handleClick('webapps')}>WebApps Integrations</p>
-              <p className="p-lead mx-4" onClick={() => handleClick('virtual')}>Virtual Reality</p>
-              <p className="p-lead mx-4" onClick={() => handleClick('internet')}>Internet of Things (IoT)</p>
+              <p className="p-lead mx-4 side-navigation-tab" onClick={() => handleClick('mobile')}>Mobile Apps Development</p>
+              <p className="p-lead mx-4 side-navigation-tab" onClick={() => handleClick('webapps')}>WebApps Integrations</p>
+              <p className="p-lead mx-4 side-navigation-tab" onClick={() => handleClick('virtual')}>Virtual Reality</p>
+              <p className="p-lead mx-4 side-navigation-tab" onClick={() => handleClick('internet')}>Internet of Things (IoT)</p>
               <Link href="/"><Button_styled className="my-3">back</Button_styled></Link>
             </Col>
           </Row>

@@ -35,13 +35,12 @@ const SolutionOne = () => {
           <Row className="my-5">
             <Col className="pb-5 my-5 mx-4" style={{ color: 'white' }}>
               <h4 className="bold pb-3">System Integration</h4>
-              <p className="p-lead mx-4"  onClick={() => handleClick('oracle')}>Oracle</p>
-              <p className="p-lead mx-4" onClick={() => handleClick('acumatica')}>Acumatica</p>
+              <p className="p-lead mx-4 side-navigation-tab" onClick={() => handleClick('oracle')}>Oracle</p>
+              <p className="p-lead mx-4 side-navigation-tab" onClick={() => handleClick('acumatica')}>Acumatica</p>
               {/* <p className="p-lead mx-4">Phicara</p> */}
-              <p className="p-lead mx-4" onClick={() => handleClick('cadena')}>Cadena</p>
+              <p className="p-lead mx-4 side-navigation-tab" onClick={() => handleClick('cadena')}>Cadena</p>
               <Link href="/"><Button_styled className="my-3">back</Button_styled></Link>
               {/* when click back toggle class reverse */}
-              
             </Col>
           </Row>
         </Col>

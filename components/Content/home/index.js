@@ -5,7 +5,7 @@ import Link from 'next/link'
 
 export default function HomeContent () {
   return (
-             <Container className="home-container parent">
+             <Container className="home-container parent-animation">
                  <Row className="mx-auto transform-right-left ">
                      <Column_styled md={6} lg={6} >
                          <h4 className="bold" >System Integrator</h4>
@@ -14,8 +14,9 @@ export default function HomeContent () {
                      </Column_styled>
                      <Column_styled md={6} lg={6} >
                          <h4 className="bold" >Professional Services</h4>
-                         <p className="p-lead">Application, Software, Web development, System Analyst</p>
-                         <Link href="/products/technology-enablement"><Button className="btn-dark btn-md rounded-pill">Details</Button></Link>
+                         <p className="p-lead">Front End-Developer, Back-End Developer, Full Stack
+                             Developer, System Analyst, Quality Assurance Analysis</p>
+                         <Link href="/products/professional-services"><Button className="btn-dark btn-md rounded-pill">Details</Button></Link>
                      </Column_styled>
                  </Row>
                  <Row className="mx-auto transform-left-right ">
