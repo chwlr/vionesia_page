@@ -33,8 +33,8 @@ const AboutContent = () => {
           <Row className="my-5">
             <Col className="pb-5 my-5 mx-4" style={{ color: 'white' }}>
               <h4 className="bold pb-3">About Vionesia</h4>
-              <p className="p-lead mx-4"  onClick={() => handleClick('ourteam')}>Our Team</p>
-              <p className="p-lead mx-4" onClick={() => handleClick('area')}>Areas of Expertise</p>
+              <p className="p-lead mx-4 side-navigation-tab"  onClick={() => handleClick('ourteam')}>Our Team</p>
+              <p className="p-lead mx-4 side-navigation-tab" onClick={() => handleClick('area')}>Areas of Expertise</p>
               {/* <p className="p-lead mx-4">Phicara</p> */}
               <Link href="/"><Button_styled className="my-3">back</Button_styled></Link>
               {/* when click back toggle class reverse */}

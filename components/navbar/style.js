@@ -7,16 +7,10 @@ const Ncntsty = styled(Container)`
   padding: 10px 50px 10px 50px;
 `
 
-const Dropdowner = styled(Container)`
-  height: 250px;
-  width: 100%;
-`
-
 const IcStyled = styled.img`
   padding: 3px;
   height: 40px;
-  margin-left: 5px;
-  margin-right: 5px;
+  margin: 5px;
 `
 const BrandStyled = styled.img`
   padding: 3px;
@@ -36,6 +30,7 @@ const NavStyle = styled.div`
       &:hover{
       color: white;
       text-decoration: underline;
+      cursor: pointer;
     }
     }
   }
@@ -63,4 +58,4 @@ const NavStyle = styled.div`
   }
 `
 
-export { Dropdowner, NavStyle, IcStyled, Ncntsty, BrandStyled }
+export { NavStyle, IcStyled, Ncntsty, BrandStyled }
