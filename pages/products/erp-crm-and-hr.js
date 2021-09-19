@@ -1,5 +1,5 @@
 import Head from 'next/head'
-import SolutionOne from '../../components/Content/solution/erp_crm'
+import SolutionOne from '../../components/Content/solution/system_integrator'
 
 export default function ProductErpcrm() {
   return (

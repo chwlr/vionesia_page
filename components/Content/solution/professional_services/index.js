@@ -2,6 +2,7 @@ import React, {useState} from 'react'
 import { Container, Row, Col } from 'react-bootstrap'
 import { Button_styled } from '../style'
 import Link from 'next/link'
+import Default from "./Default";
 
 
 const SolutionFour = () => {
@@ -12,18 +13,20 @@ const SolutionFour = () => {
     const RenderCase = (param) => {
         const a = param.a;
         switch (a) {
-            case 'webdeveloper':
-                return '<Oracle  />'
-            case 'mobiledeveloper':
-                return '<Acumatica  />'
-            case 'datascience':
-                return '<Cadena  />'
-            case 'systemanalyst':
-                return '<Cadena  />'
-            case 'qualityassurance':
-                return '<Cadena  />'
+            case 'software development':
+                return <Default />
+            case 'help desk':
+                return <Default />
+            case 'web development':
+                return <Default />
+            case 'application support':
+                return <Default />
+            case 'data centre':
+                return <Default />
+            case 'quality assurance':
+                return <Default />
             default:
-                return '<Default />'
+                return <Default />
         }
     }
 
@@ -35,11 +38,12 @@ const SolutionFour = () => {
                     <Row className="my-5">
                         <Col className="pb-5 my-5 mx-4" style={{ color: 'white' }}>
                             <h4 className="bold pb-3">Professional Services</h4>
-                            <p className="p-lead mx-4 side-navigation-tab" onClick={() => handleClick('webdeveloper')}>Web Developer</p>
-                            <p className="p-lead mx-4 side-navigation-tab" onClick={() => handleClick('mobiledeveloper')}>Mobile Developer</p>
-                            <p className="p-lead mx-4 side-navigation-tab" onClick={() => handleClick('datascience')}>Data Science</p>
-                            <p className="p-lead mx-4 side-navigation-tab" onClick={() => handleClick('systemanalyst')}>System Analyst</p>
-                            <p className="p-lead mx-4 side-navigation-tab" onClick={() => handleClick('qualityassurance')}>Quality Assurance</p>
+                            <p className="p-lead mx-4 side-navigation-tab" onClick={() => handleClick('software development')}>Application / Software development</p>
+                            <p className="p-lead mx-4 side-navigation-tab" onClick={() => handleClick('help desk')}>Help Desk / Technical support</p>
+                            <p className="p-lead mx-4 side-navigation-tab" onClick={() => handleClick('web development')}>Web development</p>
+                            <p className="p-lead mx-4 side-navigation-tab" onClick={() => handleClick('application support')}>Application support</p>
+                            <p className="p-lead mx-4 side-navigation-tab" onClick={() => handleClick('data centre')}>Monitoring for application / Data Centre</p>
+                            <p className="p-lead mx-4 side-navigation-tab" onClick={() => handleClick('quality assurance')}>Quality Assurance</p>
                             <Link href="/"><Button_styled className="my-3">back</Button_styled></Link>
                         </Col>
                     </Row>

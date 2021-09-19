@@ -6,7 +6,7 @@ export default function Default () {
     <Container className="system-integration">
         <Row style={{ minHeight: '100vh', background: 'white' }}>
             <Col lg={{ span: 6, offset:3}} className="d-flex justify-content-center align-items-center py-5">
-                <p className="p-lead text-center">Vionesia provides options of enterprise product to meet industry specific requirement & customer needs</p>
+               <p>Wait for content</p>
             </Col>
         </Row>
     </Container>

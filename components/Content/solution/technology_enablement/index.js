@@ -17,14 +17,14 @@ const SolutionTre = () => {
   const RenderCase = (param) => {
     const a = param.a;
     switch (a) {
-      case 'mobile':
-        return <MobileDev  />
-      case 'webapps':
-        return <Webapp  />
-      case 'virtual':
-        return <VirtualReality  />
-      case 'internet':
-        return <IoT  />
+      case 'cloud migration and deployment':
+        return <Default />
+      case 'complex integration':
+        return <Default />
+      case 'hardware and sensor integration':
+        return <Default />
+      case 'mobile app and web app development':
+        return <Default />
       default:
         return <Default />
     }
@@ -38,10 +38,10 @@ const SolutionTre = () => {
           <Row className="my-5">
             <Col className="pb-5 my-5 mx-4" style={{ color: 'white' }}>
               <h4 className="bold pb-3">Security & Defence</h4>
-              <p className="p-lead mx-4 side-navigation-tab" onClick={() => handleClick('mobile')}>Mobile Apps Development</p>
-              <p className="p-lead mx-4 side-navigation-tab" onClick={() => handleClick('webapps')}>WebApps Integrations</p>
-              <p className="p-lead mx-4 side-navigation-tab" onClick={() => handleClick('virtual')}>Virtual Reality</p>
-              <p className="p-lead mx-4 side-navigation-tab" onClick={() => handleClick('internet')}>Internet of Things (IoT)</p>
+              <p className="p-lead mx-4 side-navigation-tab" onClick={() => handleClick('cloud migration and deployment')}>Cloud Migration & Deployment; “shift & lift” from on-premise to cloud</p>
+              <p className="p-lead mx-4 side-navigation-tab" onClick={() => handleClick('complex integration')}>Complex integrations; front-end and back-end integrations</p>
+              <p className="p-lead mx-4 side-navigation-tab" onClick={() => handleClick('hardware and sensor integration')}>Hardware and sensor integration; sensors, camera, equipments (IoT)</p>
+              <p className="p-lead mx-4 side-navigation-tab" onClick={() => handleClick('mobile app and web app development')}>Mobile App (Android/iOS) & Web App Development</p>
               <Link href="/"><Button_styled className="my-3">back</Button_styled></Link>
             </Col>
           </Row>

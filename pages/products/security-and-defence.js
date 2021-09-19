@@ -1,5 +1,5 @@
 import Head from 'next/head'
-import SolutionTwo from '../../components/Content/solution/security_defence'
+import SolutionTwo from '../../components/Content/solution/tactical_equipment_supplier'
 
 export default function ProductSecurity() {
   return (
